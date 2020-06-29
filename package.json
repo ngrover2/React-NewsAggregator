@@ -1,0 +1,26 @@
+{
+	"name": "antnews",
+	"version": "1.0.0",
+	"description": "A News Aggregator Demo Application in React",
+	"main": "index.js",
+	"babel": {
+		"presets": [
+			"@babel/preset-env",
+			"@babel/preset-react"
+		],
+		"plugins": [
+			[
+				"@babel/plugin-transform-runtime",
+				{
+					"regenerator": true
+				}
+			]
+		]
+	},
+	"scripts": {
+		"create": "../node_modules/.bin/webpack",
+		"start": "../node_modules/.bin/webpack-dev-server --open --host 0.0.0.0 --config webpack.config.js",
+		"build": "../node_modules/.bin/webpack --config webpack.config.js -p",
+		"test": "jest"
+	}
+}
